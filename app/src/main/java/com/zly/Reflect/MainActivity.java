@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             Class clazz1 = TelephonyManager.class;
-            Method method1 = clazz1.getDeclaredMethod("getDefaultPhone");
-            Log.d(TAG, "zly --> getDefaultPhone:" + (int) method1.invoke(mTm));
+            Method method1 = clazz1.getDeclaredMethod("getDefaultSim");
+            Log.d(TAG, "zly --> getDefaultSim:" + (int) method1.invoke(mTm));
 
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
